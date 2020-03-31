@@ -20,7 +20,7 @@ public class GeolocationController {
     @GetMapping(value = "/{size}", produces = "application/json")
     @ResponseStatus(code = HttpStatus.OK)
     public List<GeoInfo> getGeoLocationList(@PathVariable Integer size) {
-        return geoLocationJsonListGenerator.generateListSizeOfJson(size);
+        return geoLocationJsonListGenerator.generateGeoInfos(size);
     }
 
 }

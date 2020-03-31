@@ -12,7 +12,7 @@ import java.util.Map;
 @Service
 public class GeoLocationJsonGenerator {
 
-    public List<GeoInfo> generateListSizeOfJson(int size) {
+    public List<GeoInfo> generateGeoInfos(int size) {
         List<GeoInfo> geoInfos = new ArrayList<>();
 
         for (int i = 0; i < size; i++) {
